@@ -5,21 +5,21 @@
 class Mdpress < Formula
   desc "Markdown to PDF presentation tool"
   homepage "https://github.com/Skel-Tech/mdpress"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Skel-Tech/mdpress/releases/download/v0.1.2/mdpress_0.1.2_darwin_amd64.tar.gz"
-      sha256 "0d791b70d66da8786668b4020a5b9232f8b7658d13fb73b3e55324f66e7b85e4"
+      url "https://github.com/Skel-Tech/mdpress/releases/download/v0.1.3/mdpress_0.1.3_darwin_amd64.tar.gz"
+      sha256 "015b0595561c64751d0a5324477294479b4b3b4cc7783b91d929ea74bbf3874d"
 
       define_method(:install) do
         bin.install "mdpress"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Skel-Tech/mdpress/releases/download/v0.1.2/mdpress_0.1.2_darwin_arm64.tar.gz"
-      sha256 "01a80f1e1b4345c6fd0bc63b583574088e02c5795453fe5faa3b270750ecea5b"
+      url "https://github.com/Skel-Tech/mdpress/releases/download/v0.1.3/mdpress_0.1.3_darwin_arm64.tar.gz"
+      sha256 "79125adfb99062365d6e841f9c1645f16a9c1bb659cced1676a746b54f4c1995"
 
       define_method(:install) do
         bin.install "mdpress"
@@ -29,15 +29,15 @@ class Mdpress < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Skel-Tech/mdpress/releases/download/v0.1.2/mdpress_0.1.2_linux_amd64.tar.gz"
-      sha256 "57043e31950dd3ea92b4776ef4dd94b27f2b846f7f7f945501e8bc344f77487e"
+      url "https://github.com/Skel-Tech/mdpress/releases/download/v0.1.3/mdpress_0.1.3_linux_amd64.tar.gz"
+      sha256 "a64d1d51d41451e2f6eae0a3b27613d2295f91c3d9c0a00998f8ee10eb744ae0"
       define_method(:install) do
         bin.install "mdpress"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Skel-Tech/mdpress/releases/download/v0.1.2/mdpress_0.1.2_linux_arm64.tar.gz"
-      sha256 "7c647e35c997e931f34ad74eb8713b53b5fd78578c8b223340e6bb5a9f97bc2d"
+      url "https://github.com/Skel-Tech/mdpress/releases/download/v0.1.3/mdpress_0.1.3_linux_arm64.tar.gz"
+      sha256 "b29088e1929eafd98338e2f6bdfd335084ca94140539f34ba6a58ed711cbc02c"
       define_method(:install) do
         bin.install "mdpress"
       end
